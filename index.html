@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700;800&display=swap" rel="stylesheet">
 <!-- Font Awesome cdn -->
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <!-- Tailwind Custom Color  -->
 <script>
     tailwind.config = {
@@ -32,6 +32,90 @@
 </style>
 </head>
 <body>
-    
+    <header class="container mx-auto  justify-center">
+<!-- navbar -->
+<nav class="font-roboto-slab mt-7">
+ <div class="flex rounded-3xl bg-[#F85559] mx-auto mt-7">
+  <div class="text-white navbar-center hidden md:block grid-cols-1 md:grid-cols-2 lg:flex">
+    <ul class="menu menu-horizontal px-1 gap-5 items-center">
+      <li>Home</li>
+      <li>About Us</li>
+      <li>Shop</li>
+      <li>All Fruits</li>
+    </ul>
+  </div>
+  <div class="flex w-12">
+    <img src="./images/logo.png" alt="">
+  </div>
+  <div>
+    <a class="font-bold ml-3 text-3xl text-white items-center">Fruit Burst</a>
+  </div>
+    <div class="form-control relative flex navbar-end">
+      <input type="text" placeholder="Search here" class="input input-bordered ml-10 w-12 md:w-auto rounded-2xl" />
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+ </div>
+</nav>
+<!-- Exotic Section  -->
+<section class="mt-20 rounded-xl font-roboto-slab">
+  <div class="carousel w-full">
+    <div id="slide1" class="carousel-item relative w-full">
+      <img src="./images/banner1.png" class="w-full" />
+      
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        
+        <a href="#slide4" class="btn btn-circle">❮</a> 
+        <div class="items-center">
+          <h1 class="mb-10 text-7xl font-extrabold text-white">Exotic tastes at your <br>doorstep</h1>
+      <p class="text-2xl text-white">We supply highly quality organic products</p>
+      <button class="btn btn-error text-white bg-[#F85559] items-center mt-5">Shop Now</button>
+        </div>
+        <a href="#slide2" class="btn btn-circle">❯</a>
+        
+      </div>
+    </div> 
+    <div id="slide2" class="carousel-item relative w-full border-5 h-100">
+      <img src="./images/banner2.png" class="w-full" />
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide1" class="btn btn-circle">❮</a> 
+        <div class="items-center">
+          <h1 class="mb-10 text-7xl font-extrabold text-white">Exotic tastes at your <br>doorstep</h1>
+      <p class="text-2xl text-white">We supply highly quality organic products</p>
+      <button class="btn btn-error text-white bg-[#F85559] items-center mt-5">Shop Now</button>
+        <a href="#slide3" class="btn btn-circle">❯</a>
+      </div>
+    </div> 
+    <div id="slide3" class="carousel-item relative w-full">
+      <img src="./images/banner3.png" class="w-full" />
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide2" class="btn btn-circle">❮</a> 
+        <div class="items-center">
+          <h1 class="mb-10 text-7xl font-extrabold text-white">Exotic tastes at your <br>doorstep</h1>
+      <p class="text-2xl text-white">We supply highly quality organic products</p>
+      <button class="btn btn-error text-white bg-[#F85559] items-center mt-5">Shop Now</button>
+        <a href="#slide4" class="btn btn-circle">❯</a>
+      </div>
+    </div> 
+    <div id="slide4" class="carousel-item relative w-full">
+      <img src="./images/banner4.png" class="w-full" />
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide3" class="btn btn-circle">❮</a> 
+        <div class="items-center">
+          <h1 class="mb-10 text-7xl font-extrabold text-white">Exotic tastes at your <br>doorstep</h1>
+      <p class="text-2xl text-white">We supply highly quality organic products</p>
+      <button class="btn btn-error text-white bg-[#F85559] items-center mt-5">Shop Now</button>
+        <a href="#slide1" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+  </div>
+</section>
+    </header>
+
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
